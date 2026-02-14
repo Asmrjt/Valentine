@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="romantic-song" src="assets/audio/romantic-song.mp3" loop></audio>
+    <audio id="background-music" src="assets/audio/background-music.mp3" loop></audio>
+
+    <div id="page1" class="page active">
+        <div class="center-box">
+            <img src="assets/images/cute-animation.gif" alt="Cute Animation" style="width: 200px; height: 200px;">
+            <h1>Do you love me?</h1>
+            <div class="buttons">
+                <button id="yes-btn">Ya</button>
+                <button id="no-btn">Tidak</button>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <p>Yay! I love you too bb poni debest! 💖</p>
+        </div>
+        <div id="fireworks" class="fireworks"></div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="grid">
+            <div class="box" id="box1">
+                <img src="assets/images/heart-camera.png" alt="Heart Camera">
+                <p>Just Pict</p>
+            </div>
+            <div class="box" id="box2">
+                <img src="assets/images/music.png" alt="Music">
+                <p>For You</p>
+            </div>
+            <div class="box" id="box3">
+                <img src="assets/images/envelope.png" alt="Envelope">
+                <p>Klik here</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="collage-page" class="page">
+        <div class="collage">
+            <img src="assets/images/photo1.jpg" alt="Photo 1">
+            <img src="assets/images/photo2.jpg" alt="Photo 2">
+            <img src="assets/images/photo3.jpg" alt="Photo 3">
+            <img src="assets/images/photo4.jpg" alt="Photo 4">
+            <img src="assets/images/photo5.jpg" alt="Photo 5">
+            <img src="assets/images/photo6.jpg" alt="Photo 6">
+            <img src="assets/images/photo7.jpg" alt="Photo 7">
+            <img src="assets/images/photo8.jpg" alt="Photo 8">
+            <img src="assets/images/photo9.jpg" alt="Photo 9">
+        </div>
+        <button class="back-btn" onclick="showPage('page2')">Back</button>
+    </div>
+
+    <div id="video-page" class="page">
+        <div class="video-section">
+            <div class="flowers"></div>
+            <div class="video">
+                <!-- Tambahkan autoplay dan muted untuk autoplay otomatis -->
+                <video id="video" controls autoplay muted>
+                    <source src="assets/videos/romantic-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button class="back-btn" onclick="showPage('page2')">Back</button>
+    </div>
+
+    <div id="letter-page" class="page">
+        <div class="letter">
+            <div class="stars"></div>
+            <div id="paragraph1" class="paragraph">Dari hari pertama aku bertemu kamu, hatiku sudah penuh dengan cinta yang tak terbendung. Kamu adalah cahaya di hari gelapku, dan aku tak bisa bayangkan hidup tanpa senyumanmu. 💕</div>
+            <div id="paragraph2" class="paragraph">Setiap detik bersamamu adalah petualangan yang indah. Kamu membuatku tertawa, bermimpi, dan merasa hidup. Aku cinta kamu lebih dari kata-kata bisa ungkapkan. 🌹</div>
+            <div id="paragraph3" class="paragraph">Di dunia ini, kamu adalah satu-satunya yang membuatku merasa lengkap. Terima kasih telah menjadi bagian dari hidupku. Aku akan selalu mencintaimu. ❤️</div>
+            <div id="paragraph4" class="paragraph">Hari ini dan selamanya, aku pilih kamu. Kamu adalah Valentine-ku yang abadi. Mari kita buat kenangan bersama selamanya. 💖</div>
+        </div>
+        <button class="back-btn left" onclick="showPage('page2')">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
